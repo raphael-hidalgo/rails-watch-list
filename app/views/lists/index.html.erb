@@ -1,0 +1,21 @@
+<div class="d-flex align-items-center" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4) ), URL(https://source.unsplash.com/evlkOfkQ5rE/1000*500); background-position: center; height: 500px;">
+  <h1 class="p-5 my-auto text-white fs-1 mx-auto text-center">All my lists</h1>
+</div>
+
+<div class="mx-auto mt-5" style="width: 80%;">
+  <div class="d-flex justify-content-between align-items-center mb-2">
+    <h2 class="fs-2">My lists<h2>
+    <%= link_to "Create a new list", new_list_path, class:"btn border-success m-1", style:"text-decoration: none;"%>
+  </div>
+  <div class="row">
+    <div class="col-10 row">
+      <% @lists.each do |list|%>
+        <%= link_to list_path(list), class:"col-4" do %>
+          <div class="border rouded mb-4 d-flex align-items-center" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4) ), URL(https://source.unsplash.com/evlkOfkQ5rE/1000*500); background-position: center; height: 150px;">
+            <h1 class="my-auto text-white fs-4 mx-auto text-center"><%= list.name%></h1>
+          </div>
+        <% end %>
+      <% end %>
+    </div>
+  </div>
+</div>
