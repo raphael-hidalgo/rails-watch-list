@@ -1,4 +1,9 @@
-<%= simple_form_for(@list) do |f|%>
-  <%= f.input :name%>
-  <%= f.submit%>
-<% end %>
+<div class="d-flex align-items-center" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4) ), URL(https://source.unsplash.com/evlkOfkQ5rE/1000*500); background-position: center; height: 500px;">
+  <h1 class="p-5 my-auto text-white fs-1 mx-auto text-center">New List</h1>
+</div>
+<div class="mx-auto my-5" style="width: 70%;">
+  <%= simple_form_for(@list) do |f|%>
+    <%= f.input :name%>
+    <%= f.submit%>
+  <% end %>
+</div>
