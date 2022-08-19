@@ -10,7 +10,7 @@
   <div class="row">
     <div class="col-10 row">
       <% @lists.each do |list|%>
-        <%= link_to list_path(list), class:"col-4" do %>
+        <%= link_to list_path(list), class:"col-4", style:"text-decoration: none;" do %>
           <div class="border rouded mb-4 d-flex align-items-center" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4) ), URL(https://source.unsplash.com/evlkOfkQ5rE/1000*500); background-position: center; height: 150px;">
             <h1 class="my-auto text-white fs-4 mx-auto text-center"><%= list.name%></h1>
           </div>

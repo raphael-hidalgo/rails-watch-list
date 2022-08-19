@@ -1,6 +1,4 @@
-.navbar {
-  background: white;
-  border-bottom: solid;
-  border-color: rgb(202, 202, 202);
-  position: sticky;
+.navbar-transparent {
+  background-color: transparent;
+  transition: 0.5s background-color ease;
 }
