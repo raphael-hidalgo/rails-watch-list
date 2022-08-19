@@ -12,7 +12,7 @@
 
   <body>
     <div>
-      <nav class="navbar w-100 navbar-expand-lg bg-light position-fixed top-0" data-controller="navbar" data-action="scroll@window->navbar#updateNavbar">
+      <nav class="navbar w-100 navbar-expand-lg position-fixed top-0 bg-light" data-controller="navbar" data-action="scroll@window->navbar#updateNavbar">
         <div class="container-fluid">
           <%= link_to "Home", lists_path, class:"btn border", style:"text-decoration: none;"%>
           <div class="d-flex align-items-center">
@@ -22,6 +22,7 @@
         </div>
       </nav>
       <%= yield %>
+      <%# <audio src="../assets/sounds.wav" type="wav"></audio> %>
       <div style="height: 500px; width: 100%;">
       </div>
     <div>

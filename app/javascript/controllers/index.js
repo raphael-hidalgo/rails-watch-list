@@ -9,3 +9,6 @@ application.register("hello", HelloController)
 
 import NavbarController from "./navbar_controller"
 application.register("navbar", NavbarController)
+
+import PlayController from "./play_controller.js"
+application.register("play", PlayController)

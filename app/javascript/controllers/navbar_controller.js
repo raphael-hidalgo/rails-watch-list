@@ -6,12 +6,10 @@ export default class extends Controller {
   }
 
   updateNavbar() {
-    if (window.scrollY >= window.innerHeight) {
-      console.log(true);
-      this.element.classList.add("navbar-transparent");
+    if (window.scrollY >= 500) {
+      this.element.classList.remove("bg-light");
     } else {
-      console.log(false);
-      this.element.classList.remove("navbar-transparent");
+      this.element.classList.add("bg-light");
     }
   }
 }
